@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUDESIGN WORKS : Work detail</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap");
+
+      :root {
+        --color-900: #2b2b2b;
+        --color-700: #686b6f;
+        --color-600: #97999c;
+        --color-400: #c1c5ca;
+        --color-300: #dbdde1;
+        --color-100: #f3f5f8;
+        --color-TUBL: #01b3cd;
+        --large-width: 1400px;
+
+        --font-h1: 48px;
+        --font-h2: 40px;
+        --font-h3: 32px;
+        --font-h4: 24px;
+        --font-p: 16px;
+        --font-small: 12px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Noto Sans KR", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      #header {
+        width: 100%;
+        height: 94px;
+        border-bottom: solid 1px var(--color-300);
+      }
+
+      #header .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .headA {
+        padding-left: 64px;
+        padding-right: 64px;
+      }
+
+      .headB ul {
+        display: flex;
+        list-style: none;
+        margin-left: 40px;
+      }
+      .headB a {
+        display: block;
+        margin: auto 70px;
+        color: var(--color-900);
+        font-size: var(--font-p);
+        font-weight: 700;
+        text-decoration: none;
+        border-bottom: solid 3px rgba(0, 0, 0, 0);
+      }
+      .headB a:hover {
+        border-bottom: solid 3px var(--color-900);
+      }
+
+      .headC a {
+        text-decoration: none;
+        color: var(--color-900);
+      }
+
+      .headC ul {
+        display: flex;
+
+        align-items: center;
+        list-style: none;
+        margin-right: 64px;
+      }
+
+      .headC li {
+        margin-left: 16px;
+      }
+
+      .headC .profile {
+        width: 44px;
+        height: 44px;
+        background-image: url(https://ifh.cc/g/35cl8J.png);
+        background-size: cover;
+        border: solid 1px var(--color-400);
+        border-radius: 50%;
+      }
+
+      .article {
+        width: var(--large-width);
+        margin: 120px auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+
+      /* ---------- conA ---------- */
+
+      .conA {
+        width: 280px;
+
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+      }
+
+      .conA img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        border: solid 1px var(--color-400);
+      }
+      .conA a {
+        text-decoration: none;
+      }
+      .conA h2 {
+        font-size: var(--font-h4);
+        color: var(--color-900);
+        margin: 24px auto 32px auto;
+      }
+      .conA ul {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        list-style: none;
+        color: var(--color-TUBL);
+      }
+      .conA li {
+        font-size: 14px;
+        margin: auto 16px 16px 0;
+        padding: 2px 24px;
+        border-radius: 50px;
+        border: solid 1px var(--color-TUBL);
+      }
+      .conA p,
+      .conA p a {
+        text-decoration: none;
+        color: var(--color-400);
+        line-height: 180%;
+        margin-bottom: 56px;
+      }
+      .conA p a {
+        color: var(--color-900);
+      }
+
+      /* ---------- conB ---------- */
+
+      .conB h5 {
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .conB h5:first-child {
+        color: var(--color-TUBL);
+        margin-bottom: 16px;
+      }
+
+      .conB .title {
+        display: flex;
+        align-items: baseline;
+      }
+      .conB .title h5 {
+        color: var(--color-600);
+        margin-left: 16px;
+      }
+
+      .conB h2 {
+        font-size: 36px;
+        color: var(--color-900);
+        margin-bottom: 64px;
+        line-height: 180%;
+      }
+      .conB p {
+        font-size: var(--font-p);
+        color: var(--color-900);
+        margin-bottom: 80px;
+        text-align: justify;
+        line-height: 180%;
+      }
+
+      /* ---------- conC ---------- */
+
+      .conC {
+        height: 256px;
+        border-top: solid 1px var(--color-400);
+      }
+      .conC .container {
+        width: var(--large-width);
+        height: 50%;
+        margin: 78px auto;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+      .conC .profile {
+        display: flex;
+      }
+
+      .conC .profile img {
+        width: 108px;
+        height: 108px;
+        border-radius: 50%;
+        border: solid 1px var(--color-400);
+      }
+      .conC a {
+        text-decoration: none;
+      }
+      .conC h2 {
+        font-size: var(--font-h4);
+        color: var(--color-900);
+        margin: 0 32px auto 32px;
+      }
+
+      .conC .info {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+      }
+      .conC ul {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        list-style: none;
+        color: var(--color-TUBL);
+        margin-top: 16px;
+      }
+      .conC li {
+        font-size: 14px;
+        margin: auto 16px 16px 0;
+        padding: 2px 24px;
+        border-radius: 50px;
+        border: solid 1px var(--color-TUBL);
+      }
+      .conC p,
+      .conC p a {
+        text-decoration: none;
+        color: var(--color-400);
+        line-height: 180%;
+      }
+
+      .conC .view {
+        display: flex;
+        align-items: center;
+        color: var(--color-600);
+      }
+      .conC .view img {
+        margin: 0 8px auto 16px;
+      }
+
+      /* ---------- conD ---------- */
+
+      .conD {
+        background-color: var(--color-100);
+      }
+      .conD .container {
+        width: var(--large-width);
+        margin: auto;
+        padding: 72px 0;
+      }
+
+      .comment-input {
+        width: 100%;
+        height: 148px;
+        background-color: white;
+
+        box-sizing: border-box;
+        padding: 32px 40px;
+        border-radius: 20px 20px 0 0;
+        position: relative;
+      }
+      .comment-input input {
+        width: 90%;
+        border: none;
+        font-size: var(--font-p);
+      }
+      .comment-input .icon {
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+      }
+      .comment-input .icon:active {
+        opacity: 0;
+      }
+      .comment-input .icon-hov {
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+        opacity: 0;
+      }
+      .comment-input .icon-hov:active {
+        opacity: 1;
+      }
+
+      .comment-list {
+        width: 100%;
+        height: 140px;
+        background-color: white;
+
+        box-sizing: border-box;
+        padding: 32px 40px;
+        border-top: solid 1px var(--color-400);
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+
+      .user-profile {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .user-profile img {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        border: solid 1px var(--color-400);
+      }
+      .user-profile a {
+        text-decoration: none;
+      }
+      .user-profile h2 {
+        font-size: var(--font-p);
+        font-weight: 500;
+        color: var(--color-900);
+        margin-right: 16px;
+      }
+      .user-profile h3 {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--color-900);
+        margin-top: 16px;
+      }
+
+      .user-profile .info {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        margin-left: 32px;
+      }
+      .user-profile .pro {
+        display: flex;
+        align-items: center;
+        flex-flow: row;
+      }
+
+      .user-profile p {
+        font-size: var(--font-small);
+        color: var(--color-400);
+      }
+      .comment-list a {
+        color: var(--color-TUBL);
+      }
+
+      /* -------- page btn ------- */
+
+      .page-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 100px auto 180px auto;
+      }
+
+      .page-btn ul {
+        display: flex;
+        flex-flow: row;
+        list-style: none;
+        margin: auto 32px;
+      }
+      .page-btn li {
+        margin: 0 16px;
+      }
+      .page-btn a {
+        text-decoration: none;
+        margin: auto 8px;
+        font-size: 20px;
+        color: var(--color-TUBL);
+      }
+
+      /* --------- footer -------- */
+
+      footer {
+        width: 100%;
+        height: 340px;
+        background-color: #2b2b2b;
+
+        color: #686b6f;
+        scroll-behavior: smooth;
+      }
+
+      footer .container {
+        width: 1440px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+      }
+
+      footer .top-button {
+        width: 94px;
+        height: 94px;
+        border-radius: 50%;
+        background-color: var(--color-TUBL);
+
+        position: absolute;
+        bottom: 300px;
+      }
+      footer .top-button a {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        color: white;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        line-height: 32px;
+      }
+      footer .top-button img {
+        padding-bottom: 4px;
+      }
+      footer .top-button a:hover {
+        color: white;
+      }
+
+      footer a {
+        color: #686b6f;
+        text-decoration: none;
+        border: solid 1px #686b6f;
+        border-radius: 8px;
+        padding: 4px 16px;
+      }
+
+      footer ul {
+        display: flex;
+        flex-flow: row;
+        list-style: none;
+        line-height: 48px;
+        margin-bottom: 28px;
+      }
+      footer li {
+        margin-right: 16px;
+      }
+
+      footer table {
+        line-height: 180%;
+      }
+      footer table td {
+        padding-right: 32px;
+      }
+
+      footer .out-link {
+        padding: 8px 32px;
+        display: flex;
+        align-items: center;
+      }
+      footer .out-link img {
+        margin-left: 16px;
+      }
+      footer .out-link {
+        padding: 8px 32px;
+        display: flex;
+        align-items: center;
+      }
+      footer a:hover {
+        color: #999;
+      }
+
+      /* -------- 게시글작성 -------- */
+      #stiky-button {
+        position: sticky;
+        bottom: 10%;
+        left: 90%;
+        width: 80px;
+        height: 80px;
+        background-color: var(--color-900);
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #stiky-button a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <!-- ------------------------------------------------------------------- -->
+
+  <body>
+    <!-- -------- header -------- -->
+    <div id="header">
+      <div class="container">
+        <div class="headA">
+          <a href="index.html" class="logo">
+            <img
+              src="https://ifh.cc/g/j8K8Q8.png"
+              alt="logo image"
+              height="32px"
+            />
+          </a>
+        </div>
+
+        <nav class="headB">
+          <ul>
+            <li><a href="likes.html">LIKES</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li><a href="contest.html">과제전</a></li>
+          </ul>
+        </nav>
+
+        <div class="headC">
+          <ul>
+            <li>
+              <a href="my page.html"><div class="profile"></div></a>
+            </li>
+            <li>
+              <a href="my page.html"
+                ><p><b>박서영</b>님</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://ifh.cc/g/P2yKwT.png"
+                  alt="icon"
+                  height="18px"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="article">
+      <!-- --------- conA -------- -->
+      <section class="conA">
+        <div class="container">
+          <a href="profile.html">
+            <img
+              src="https://ifh.cc/g/XT3GhA.png"
+              alt="profile image"
+              height="64px"
+            />
+            <h2>박서영</h2>
+          </a>
+          <p>
+            미디어디자인공학ㆍ21학번 <br />
+            <a href="#">2021192011@tukorea.ac.kr</a>
+          </p>
+          <ul>
+            <li>그래픽디자인</li>
+            <li>로고디자인</li>
+            <li>3D콘텐츠디자인</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- --------- conB -------- -->
+      <section class="conB">
+        <div class="container">
+          <h5>웹퍼블리싱응용ㆍ2022ㆍ가을</h5>
+          <div class="title">
+            <h2>대한민국 우리옷바르게입기운동본부 로고디자인</h2>
+            <h5><span>2022.00.00</span></h5>
+          </div>
+          <p>
+            라우드소싱 로고디자인 공모전에 출품한 작품입니다. '대한민국
+            우리옷바르게입기운동본부'에서 자음인 ㄷ(대한민국), ㅇ(우리옷),
+            ㅂ(바르게), ㅇ(입기) 을 도형화 하여 쉽게 기억에 남을 수 있는 로고를
+            디자인하였습니다. 단순한 도형을 사용하여 모던하고 심플한 분위기를
+            주며, 다양한 색상과 재질의 변화에도 쉽게 어울립니다.
+          </p>
+          <img
+            src="https://ifh.cc/g/Sp10Ct.jpg"
+            alt="detail image"
+            width="100%"
+          />
+        </div>
+      </section>
+    </section>
+
+    <!-- --------- conC -------- -->
+    <section class="conC">
+      <div class="container">
+        <div class="profile">
+          <a href="profile.html">
+            <img
+              src="https://ifh.cc/g/XT3GhA.png"
+              alt="profile image"
+              height="108px"
+            />
+          </a>
+          <a href="#">
+            <h2>박서영</h2>
+          </a>
+
+          <div class="info">
+            <p>미디어디자인공학ㆍ21학번 <br /></p>
+            <p>
+              <a href="#">2021192011@tukorea.ac.kr</a>
+            </p>
+            <ul>
+              <li>그래픽디자인</li>
+              <li>로고디자인</li>
+              <li>3D콘텐츠디자인</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="view">
+          <img src="https://ifh.cc/g/4TMWD1.png" alt="icon" height="24px" /> 00
+          <img src="https://ifh.cc/g/ZWmn2N.png" alt="icon" height="24px" /> 00
+        </div>
+      </div>
+    </section>
+
+    <!-- --------- conD -------- -->
+    <section class="conD">
+      <div class="container">
+        <div class="comment-input">
+          <input
+            class="search-txt"
+            type="text"
+            placeholder="댓글을 입력하세요."
+          />
+          <img
+            src="https://ifh.cc/g/Yass4O.png"
+            alt="button"
+            height="48px"
+            class="icon"
+          />
+          <img
+            src="https://ifh.cc/g/obRhoZ.png"
+            alt="button"
+            height="48px"
+            class="icon-hov"
+          />
+        </div>
+
+        <div class="comment-list">
+          <div class="user-profile">
+            <a href="profile.html">
+              <img
+                src="https://ifh.cc/g/XT3GhA.png"
+                alt="profile image"
+                height="68px"
+              />
+            </a>
+
+            <div class="info">
+              <div class="pro">
+                <h2>홍길동</h2>
+                <p>미디어디자인공학ㆍ22학번</p>
+              </div>
+              <h3>어떤 툴을 사용하셨나요?</h3>
+            </div>
+          </div>
+          <a href="#" class="reply">답글달기</a>
+        </div>
+
+        <div class="page-btn">
+          <a href="#">
+            <img src="https://ifh.cc/g/d3mNQ0.png" alt="icon" height="32px" />
+          </a>
+
+          <ul>
+            <li><a href="#">이전글</a></li>
+            <li>
+              <a href="work list.html">
+                <img
+                  src="https://ifh.cc/g/Rwgn2Q.png"
+                  alt="icon"
+                  height="32px"
+                />
+              </a>
+            </li>
+            <li><a href="#">다음글</a></li>
+          </ul>
+          <a href="#">
+            <img src="https://ifh.cc/g/gljDBg.png" alt="icon" height="32px" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- -------- footer -------- -->
+
+    <footer>
+      <div class="container">
+        <div class="top-button">
+          <a href="#header">
+            <img src="https://ifh.cc/g/m1pP05.png" alt="icon" height="18px" />
+            TOP
+          </a>
+        </div>
+
+        <img src="https://ifh.cc/g/rWYqHo.png" alt="logo" height="56px" />
+
+        <div class="center">
+          <div class="link">
+            <ul>
+              <li><a href="#">개인정보취급방침</a></li>
+              <li><a href="#">개인정보목적외이용제공대장</a></li>
+              <li><a href="#">정보보호실천수칙</a></li>
+            </ul>
+          </div>
+
+          <div class="info">
+            <table>
+              <tr>
+                <td>주소</td>
+                <td style="color: #999">
+                  15073 경기도 시흥시 산기대학로 237 (정왕동) 한국공학대학교
+                  공학관 A동
+                </td>
+              </tr>
+              <tr>
+                <td>전화번호</td>
+                <td style="color: #999">
+                  학부 행정실: 031-8041-0660 | 학교대표전화: 031-8041-1000 |
+                  입학안내: 1588-2036
+                </td>
+              </tr>
+            </table>
+            Copyright© 2022 TUKOREA DESIGN ENGINEERING. ALL RIGHTS RESERVED.
+          </div>
+        </div>
+
+        <a href="#" class="out-link">
+          관련사이트
+          <img src="https://ifh.cc/g/C2zxXK.png" alt="icon" height="18px" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

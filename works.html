@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUDESIGN WORKS : Works</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap");
+
+      :root {
+        --color-900: #2b2b2b;
+        --color-700: #686b6f;
+        --color-600: #97999c;
+        --color-400: #c1c5ca;
+        --color-300: #dbdde1;
+        --color-100: #f3f5f8;
+        --color-TUBL: #01b3cd;
+        --large-width: 1400px;
+
+        --font-h1: 48px;
+        --font-h2: 40px;
+        --font-h3: 32px;
+        --font-h4: 24px;
+        --font-p: 16px;
+        --font-small: 12px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Noto Sans KR", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      #header {
+        width: 100%;
+        height: 94px;
+        border-bottom: solid 1px var(--color-300);
+      }
+
+      #header .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .headA {
+        padding-left: 64px;
+        padding-right: 64px;
+      }
+
+      .headB ul {
+        display: flex;
+        list-style: none;
+        margin-left: 40px;
+      }
+      .headB a {
+        display: block;
+        margin: auto 70px;
+        color: var(--color-900);
+        font-size: var(--font-p);
+        font-weight: 700;
+        text-decoration: none;
+        border-bottom: solid 3px rgba(0, 0, 0, 0);
+      }
+      .headB a:hover {
+        border-bottom: solid 3px var(--color-900);
+      }
+
+      .headC a {
+        text-decoration: none;
+        color: var(--color-900);
+      }
+
+      .headC ul {
+        display: flex;
+
+        align-items: center;
+        list-style: none;
+        margin-right: 64px;
+      }
+
+      .headC li {
+        margin-left: 16px;
+      }
+
+      .headC .profile {
+        width: 44px;
+        height: 44px;
+        background-image: url(https://ifh.cc/g/35cl8J.png);
+        background-size: cover;
+        border: solid 1px var(--color-400);
+        border-radius: 50%;
+      }
+
+      /* -------- conA --------- */
+
+      .conA {
+        width: 1440px;
+        margin: 136px auto 104px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: row;
+      }
+
+      .conA h1{
+        font-size: var(--font-h1);
+        color: var(--color-900);
+      }
+
+      .conA .right {
+        display: flex;
+        align-items: center;
+      }
+
+      .search-box {
+        width: 390px;
+        height: 48px;
+        padding: 4px 32px;
+        border: solid 1px var(--color-300);
+        border-radius: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .search-box .search-txt {
+        border: none;
+        width: 90%;
+        height: 70%;
+        font-size: 14px;
+      }
+      .search-box .search-btn {
+        border: none;
+        background-color: white;
+      }
+
+      .conA .align{
+        display: flex;
+        align-items: center;
+        margin-left: 60px;
+
+        font-size: var(--font-h4);
+      }
+      .conA .align img{
+        margin-left: 24px;
+      }
+
+
+      /* -------- conB --------- */
+
+      .article{
+        width: 1440px;
+        margin: 0 auto 120px auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      .conB{
+        width: 232px;
+      }
+      .aside .sub-title{
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+
+        width: 232px;
+        height: 48px;
+        background-color: var(--color-100);
+        border-radius: 50px;
+        padding-left: 20px;
+        text-decoration: none;
+        margin-top: 16px;
+      }
+      .aside .sub-title p{
+        font-size: var(--font-p);
+        font-weight: 700;
+        color: var(--color-700);
+        margin-left: 16px;
+      }
+      .aside .sub-title:hover{
+        background-color: #e4e8ee;
+      }
+
+      .aside .sub-title:hover p{
+        transform: translateX(2px);
+      }
+
+      .aside ul{
+        list-style: none;
+        margin-left: 64px;
+      }
+      .aside li{
+        margin-top: 16px;
+      }
+      .aside li a{
+        text-decoration: none;
+        font-size: 16px;
+        color: var(--color-600);
+      }
+
+      .aside li:hover{
+        transform: translateX(2px);
+      }
+      .aside a:hover{
+        color: var(--color-900);
+      }
+
+
+      /* -------- conC --------- */
+
+      .conC .container {
+        width: 1200px;
+        display: grid;
+        grid-template: 278px 278px 278px;
+      }
+
+      [class *= item]{
+        box-sizing: border-box;
+      }
+
+      .item {
+        width: 278px;
+        height: 278px;
+        border-radius: 8px;
+        position: relative;
+        margin: 9px;
+      }
+
+      .item:first-child {
+        grid-row: 1 / span 2;
+        grid-column: 1 / span 2;
+
+        width: 574px;
+        height: 574px;
+        border-radius: 8px;
+        position: relative;
+        margin: 9px;
+      }
+
+      .item:nth-child(2) {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+      }
+      .item:nth-child(3) {
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+      }
+      .item-more {
+        grid-column: 1 / span 4;
+        margin: 100px auto;
+      }
+      .item-more:hover{
+        opacity: .5;
+      }
+
+      .item .image {
+        width: 100%;
+        border-radius: 8px;
+        position: absolute;
+      }
+
+      .item .item-hover {
+        position: absolute;
+
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        width: 100%;
+        height: 100%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+        box-sizing: border-box;
+        padding: 40px 32px;
+
+        opacity: 0;
+        transition: all 0.2s;
+      }
+      .item .item-hover p {
+        font-size: var(--font-small);
+        font-weight: 300;
+        color: white;
+        margin-bottom: 40px;
+      }
+      .item .item-hover h5 {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        text-overflow: ellipsis;
+      }
+
+      .item:first-child .item-hover {
+        padding: 56px;
+      }
+      .item:first-child .item-hover p {
+        font-size: 16px;
+      }
+      .item:first-child .item-hover h5 {
+        width: 80%;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+
+      .item .item-hover:hover {
+        opacity: 1;
+      }
+
+      .item .icon {
+        position: absolute;
+        bottom: 20px;
+        right: 24px;
+      }
+      .item .icon:active {
+        opacity: 0;
+      }
+
+      .item .icon-hov {
+        position: absolute;
+        bottom: 20px;
+        right: 24px;
+        opacity: 0;
+      }
+      .item .icon-hov:active {
+        opacity: 1;
+      }
+
+      /* --------- footer -------- */
+
+      footer {
+        width: 100%;
+        height: 340px;
+        background-color: #2b2b2b;
+
+        color: #686b6f;
+        scroll-behavior: smooth;
+      }
+
+      footer .container {
+        width: 1440px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+      }
+
+      footer .top-button {
+        width: 94px;
+        height: 94px;
+        border-radius: 50%;
+        background-color: var(--color-TUBL);
+
+        position: absolute;
+        bottom: 300px;
+      }
+      footer .top-button a {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        color: white;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        line-height: 32px;
+      }
+      footer .top-button img {
+        padding-bottom: 4px;
+      }
+      footer .top-button a:hover {
+        color: white;
+      }
+
+      footer a {
+        color: #686b6f;
+        text-decoration: none;
+        border: solid 1px #686b6f;
+        border-radius: 8px;
+        padding: 4px 16px;
+      }
+
+      footer ul {
+        display: flex;
+        flex-flow: row;
+        list-style: none;
+        line-height: 48px;
+        margin-bottom: 28px;
+      }
+      footer li {
+        margin-right: 16px;
+      }
+
+      footer table {
+        line-height: 180%;
+      }
+      footer table td {
+        padding-right: 32px;
+      }
+
+      footer .out-link {
+        padding: 8px 32px;
+        display: flex;
+        align-items: center;
+      }
+      footer .out-link img {
+        margin-left: 16px;
+      }
+      footer .out-link {
+        padding: 8px 32px;
+        display: flex;
+        align-items: center;
+      }
+      footer a:hover {
+        color: #999;
+      }
+
+      /* -------- 게시글작성 -------- */
+      #stiky-button {
+        position: sticky;
+        bottom: 10%;
+        left: 90%;
+        width: 80px;
+        height: 80px;
+        background-color: var(--color-900);
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #stiky-button a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <!-- ------------------------------------------------------------------- -->
+
+  <body>
+    <!-- -------- header -------- -->
+    <div id="header">
+      <div class="container">
+        <div class="headA">
+          <a href="index.html" class="logo">
+            <img
+              src="https://ifh.cc/g/j8K8Q8.png"
+              alt="logo image"
+              height="32px"
+            />
+          </a>
+        </div>
+
+        <nav class="headB">
+          <ul>
+            <li><a href="likes.html">LIKES</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li><a href="contest.html">과제전</a></li>
+          </ul>
+        </nav>
+
+        <div class="headC">
+          <ul>
+            <li>
+              <a href="my page.html"><div class="profile"></div></a>
+            </li>
+            <li>
+              <a href="my page.html"
+                ><p><b>박서영</b>님</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://ifh.cc/g/P2yKwT.png"
+                  alt="icon"
+                  height="18px"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------- conA --------- -->
+
+    <section class="conA">
+      <h1>WORKS</h1>
+
+      <div class="right">
+        <div class="search-box">
+            <input
+              class="search-txt"
+              type="text"
+              placeholder="제목, 과목명, 이름으로 검색"
+            />
+            <button class="search-btn" type="submit">
+              <img src="https://ifh.cc/g/QxRxA4.png" alt="icon" height="24px" />
+            </button>
+          </form>
+        </div>
+
+        <div class="align">
+          <h4>최신순</h4>
+          <img src="https://ifh.cc/g/P2yKwT.png" alt="icon" height="32px" />
+        </div>
+      </div>
+    </section>
+
+    <!-- --------- conB --------- -->
+
+    <section class="article">
+      <section class="conB">
+        <div class="container">
+          <div class="aside">
+            <a href="work list.html" class="sub-title">
+              <img src="https://ifh.cc/g/jfQ9So.png" alt="icon" height="24px"/>
+              <p>산업디자인공학</p>
+            </a>
+            <ul>
+              <li><a href="work list.html">22학번</a></li>
+              <li><a href="work list.html">21학번</a></li>
+              <li><a href="work list.html">20학번</a></li>
+              <li><a href="work list.html">19학번</a></li>
+              <li><a href="work list.html">18학번</a></li>
+              <li><a href="work list.html">…</a></li>
+            </ul>
+          </div>
+
+          <div class="aside">
+            <a href="work list.html" class="sub-title">
+              <img src="https://ifh.cc/g/cj3QaA.png" alt="icon" height="24px"/>
+              <p>미디어디자인공학</p>
+            </a>
+            <ul>
+              <li><a href="work list.html">22학번</a></li>
+              <li><a href="work list.html">21학번</a></li>
+              <li><a href="work list.html">20학번</a></li>
+              <li><a href="work list.html">19학번</a></li>
+              <li><a href="work list.html">18학번</a></li>
+              <li><a href="work list.html">…</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------- conC --------- -->
+
+      <section class="conC">
+        <div class="container">
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <a href="work detail.html" class="item">
+            <img
+              src="https://ifh.cc/g/Q8ZhDV.jpg"
+              alt="thumbnail image"
+              class="image"
+            />
+            <div class="item-hover">
+              <p>박서영 ㅣ 웹퍼블리싱응용</p>
+              <h5>대한민국 우리옷바르게입기운동본부 로고디자인</h5>
+            </div>
+
+            <img
+              src="https://ifh.cc/g/oL0yr4.png"
+              alt="icon"
+              class="icon"
+              height="36px"
+            />
+            <img
+              src="https://ifh.cc/g/ABz7Bb.png"
+              alt="icon"
+              class="icon-hov"
+              height="36px"
+            />
+          </a>
+
+          <div class="item-more">
+            <img src="https://ifh.cc/g/Sjpxd9.png" alt="iocn" height="64px">
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ---- stiky ----- -->
+    <div id="stiky-button">
+      <a href="#">게시글<br />작성</a>
+    </div>
+
+    <!-- -------- footer -------- -->
+
+    <footer>
+      <div class="container">
+        <div class="top-button">
+          <a href="#header">
+            <img src="https://ifh.cc/g/m1pP05.png" alt="icon" height="18px" />
+            TOP
+          </a>
+        </div>
+
+        <img src="https://ifh.cc/g/rWYqHo.png" alt="logo" height="56px" />
+
+        <div class="center">
+          <div class="link">
+            <ul>
+              <li><a href="#">개인정보취급방침</a></li>
+              <li><a href="#">개인정보목적외이용제공대장</a></li>
+              <li><a href="#">정보보호실천수칙</a></li>
+            </ul>
+          </div>
+
+          <div class="info">
+            <table>
+              <tr>
+                <td>주소</td>
+                <td style="color: #999">
+                  15073 경기도 시흥시 산기대학로 237 (정왕동) 한국공학대학교
+                  공학관 A동
+                </td>
+              </tr>
+              <tr>
+                <td>전화번호</td>
+                <td style="color: #999">
+                  학부 행정실: 031-8041-0660 | 학교대표전화: 031-8041-1000 |
+                  입학안내: 1588-2036
+                </td>
+              </tr>
+            </table>
+            Copyright© 2022 TUKOREA DESIGN ENGINEERING. ALL RIGHTS RESERVED.
+          </div>
+        </div>
+
+        <a href="#" class="out-link">
+          관련사이트
+          <img src="https://ifh.cc/g/C2zxXK.png" alt="icon" height="18px" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
